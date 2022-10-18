@@ -3,10 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/background_button_drawable.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/day_night_buttons.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_minimize_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_baseline_plus_one_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_button_background_filled.xml" value="0.109" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1665" />
+        <entry key="app/src/main/res/drawable/ic_minus.xml" value="0.1195" />
+        <entry key="app/src/main/res/drawable/ic_minus_night.xml" value="0.219" />
         <entry key="app/src/main/res/drawable/ic_plus.xml" value="0.122" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="app/src/main/res/drawable/ic_plus_day.xml" value="0.1315" />
+        <entry key="app/src/main/res/drawable/ic_plus_night.xml" value="0.219" />
+        <entry key="app/src/main/res/drawable/minus_button_drawable.xml" value="0.13" />
+        <entry key="app/src/main/res/drawable/plus_button_drawable.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/menu/main_menu.xml" value="0.16111111111111112" />
       </map>
     </option>

@@ -4,11 +4,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.StateListDrawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -32,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         mScoreText1 = (TextView) findViewById(R.id.score1);
         mScoreText2 = (TextView) findViewById(R.id.score2);
+
         if (savedInstanceState != null) {
             mScore1 = savedInstanceState.getInt(STATE_SCORE_1);
             mScore2 = savedInstanceState.getInt(STATE_SCORE_2);

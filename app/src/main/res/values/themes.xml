@@ -18,16 +18,16 @@
 
     <style name="ScoreButtons" parent="AppTheme">
         <item name="android:color">@color/black</item>
-        <item name="android:background">@drawable/button_background</item>
+        <item name="android:background">@drawable/background_button_drawable</item>
     </style>
 
     <style name="PlusButtons" parent="ScoreButtons">
-        <item name="android:src">@drawable/ic_plus</item>
+        <item name="android:src">@drawable/plus_button_drawable</item>
         <item name="android:contentDescription">@string/plus_button_description</item>
     </style>
 
     <style name="MinusButtons" parent="ScoreButtons">
-        <item name="android:src">@drawable/ic_minus</item>
+        <item name="android:src">@drawable/minus_button_drawable</item>
         <item name="android:contentDescription">@string/minus_button_description</item>
     </style>
 
