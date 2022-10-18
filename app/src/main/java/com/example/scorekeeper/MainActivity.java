@@ -4,12 +4,16 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.StateListDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private int mScore1;
@@ -18,6 +22,14 @@ public class MainActivity extends AppCompatActivity {
     private TextView mScoreText2;
     static final String STATE_SCORE_1 = "Team 1 Score";
     static final String STATE_SCORE_2 = "Team 2 Score";
+
+    private ImageButton mMinusButton1;
+    private ImageButton mMinusButton2;
+    private ImageButton mPlusButton1;
+    private ImageButton mPlusButton2;
+
+    int[] plusImages = {R.drawable.ic_plus, R.drawable.ic_plus_night};
+    int[] minusImages = {R.drawable.ic_minus, R.drawable.ic_minus_night};
 
     @Override
     protected void onSaveInstanceState(@NonNull Bundle outState) {
@@ -38,6 +50,32 @@ public class MainActivity extends AppCompatActivity {
             mScoreText1.setText(String.valueOf(mScore1));
             mScoreText2.setText(String.valueOf(mScore2));
         }
+        mMinusButton1 = findViewById(R.id.decTeam1);
+        mMinusButton2 = findViewById(R.id.decTeam2);
+        mPlusButton1 = findViewById(R.id.incTeam1);
+        mPlusButton2 = findViewById(R.id.incTeam2);
+        int nightMode = AppCompatDelegate.getDefaultNightMode();
+        if (nightMode == AppCompatDelegate.MODE_NIGHT_NO) {
+            day_night_mode(0);
+        } else if (nightMode == AppCompatDelegate.MODE_NIGHT_YES) {
+            day_night_mode(1);
+            // Every time the app starts the AppCompatDelegate isn't set to a
+            // specified mode but we want the day mode, so for
+            // MODE_NIGHT_UNSPECIFIED we pass the value 0 (day mode)
+        } else if (nightMode == AppCompatDelegate.MODE_NIGHT_UNSPECIFIED) {
+            day_night_mode(0);
+        }
+    }
+
+    /**
+     * @param i specifies whether we want to set night or day mode for the image buttons
+     *          when i=0 we turn into day mode and when i=1 to night mode
+     */
+    private void day_night_mode(int i) {
+        mPlusButton1.setImageResource(plusImages[i]);
+        mPlusButton2.setImageResource(plusImages[i]);
+        mMinusButton1.setImageResource(minusImages[i]);
+        mMinusButton2.setImageResource(minusImages[i]);
     }
 
     @Override
@@ -63,7 +101,6 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
             }
-            recreate();
         }
         return true;
     }

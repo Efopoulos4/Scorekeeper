@@ -21,7 +21,7 @@
 
         <ImageButton
             android:id="@+id/decTeam1"
-            style="@style/MinusButtons"
+            style="@style/MinusButtonsByDay"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_alignParentStart="true"
@@ -40,7 +40,7 @@
 
         <ImageButton
             android:id="@+id/incTeam1"
-            style="@style/PlusButtons"
+            style="@style/PlusButtonsByDay"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_alignParentEnd="true"
@@ -66,7 +66,7 @@
 
         <ImageButton
             android:id="@+id/decTeam2"
-            style="@style/MinusButtons"
+            style="@style/MinusButtonsByDay"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_alignParentStart="true"
@@ -85,7 +85,7 @@
 
         <ImageButton
             android:id="@+id/incTeam2"
-            style="@style/PlusButtons"
+            style="@style/PlusButtonsByDay"
             android:layout_width="@dimen/button_size"
             android:layout_height="@dimen/button_size"
             android:layout_alignParentEnd="true"

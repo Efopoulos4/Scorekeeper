@@ -21,13 +21,23 @@
         <item name="android:background">@drawable/button_background</item>
     </style>
 
-    <style name="PlusButtons" parent="ScoreButtons">
-        <item name="android:src">@drawable/ic_plus</item>
+    <style name="PlusButtonsByDay" parent="ScoreButtons">
+<!--        <item name="android:src">@drawable/ic_plus</item>-->
         <item name="android:contentDescription">@string/plus_button_description</item>
     </style>
 
-    <style name="MinusButtons" parent="ScoreButtons">
-        <item name="android:src">@drawable/ic_minus</item>
+    <style name="MinusButtonsByDay" parent="ScoreButtons">
+<!--        <item name="android:src">@drawable/ic_minus</item>-->
+        <item name="android:contentDescription">@string/minus_button_description</item>
+    </style>
+
+    <style name="PlusButtonsByNight" parent="ScoreButtons">
+<!--        <item name="android:src">@drawable/ic_plus_night</item>-->
+        <item name="android:contentDescription">@string/plus_button_description</item>
+    </style>
+
+    <style name="MinusButtonsByNight" parent="ScoreButtons">
+<!--        <item name="android:src">@drawable/ic_minus_night</item>-->
         <item name="android:contentDescription">@string/minus_button_description</item>
     </style>
 
